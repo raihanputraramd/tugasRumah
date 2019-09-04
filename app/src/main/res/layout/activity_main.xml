@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:textColor="@color/whiteText"
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latihan Recycler View Dan Card View"
+            android:textAlignment="center"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:padding="60dp" />
+
+        <Button
+            android:textColor="@color/whiteText"
+            android:background="@drawable/cstmbuttom"
+            android:id="@+id/btnPutra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judul"
+            android:text="Raihan Putra"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:textColor="@color/whiteText"
+            android:background="@drawable/cstmbuttom"
+            android:id="@+id/btnAzfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judul"
+            android:layout_centerHorizontal="true"
+            android:text="Raden Azfa"
+            android:layout_alignBaseline="@id/btnPutra"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:layout_margin="20dp"
+            android:textColor="@color/whiteText"
+            android:background="@drawable/cstmbuttom"
+            android:id="@+id/btnCardView"
+            android:text="Card View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnPutra"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
